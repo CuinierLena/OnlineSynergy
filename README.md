@@ -23,3 +23,5 @@ http://www.istia.univ-angers.fr/fr/index.html
 
 -> Stream a webcam using Javascript, NodeJS, Android, Opera Mobile, Web Sockets and HTML5 :
 http://francisshanahan.com/index.php/2011/stream-a-webcam-using-javascript-nodejs-android-opera-mobile-web-sockets-and-html5/
+
+-> RTCMultiConnection : https://www.webrtc-experiment.com/RTCMultiConnection/
