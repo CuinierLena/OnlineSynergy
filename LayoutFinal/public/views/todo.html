@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" />
+        <link href="../styles/style.css" rel="stylesheet" type="text/css" media="screen"/>
+        <script src="/socket.io/socket.io.js"></script>
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+        <!-- FontAwesome for icons -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+        
+        <title>Liste de Tâches</title>
+    </head>
+
+    <body>	
+
+        <div id="container">
+            <!-- the to-do list -->
+            <div class="line">
+                <div class="column" >
+                    <label>To Do</label>
+                    <ul id="todo-list" >
+                    </ul>
+                </div>
+                <div class="column">
+                    <label>In progress</label>
+                    <ul id="in-list" >
+                    </ul>
+                </div>
+                <div class="column">
+                    <label>Done</label>
+                    <ul id="done-list" >
+                    </ul>
+                </div>
+            </div>
+
+            <!-- form pour ajouter une tâche à la liste -->
+            <div class="col-md-10 col-md-offset-2">
+                <form id="todo-form">
+                    <!-- <div class="col-xs-3"><label>Ajouter une tâche : </label></div> -->
+                    <div class="col-xs-10 input-group">  
+                       <!--  <span class="input-group-addon"><i id="form_icon" class="fa fa-plus-square fa-2x" ></i></span> -->
+                        <input class="form-control feedback-input input-lg" name="todo-form-add" id="todo-form-add" type="text" placeholder="Nouvelle tâche"/>
+                        <span class="input-group-addon"><i class="fa fa-trash fa-2x" id="trash"  ondragover="dragOver(event)" ondrop="dragDrop(event)"></i></span>
+                    </div>
+                    <!-- <i class="fa fa-plus-square fa-2x" onclick='addTache()'></i> -->
+                    
+                    <!-- <img src="img/Trash-resize.png"  class="trash" > -->
+                </form> 
+            </div> 
+        </div>
+
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    
+    </body>
+
+</html>
+<script src="../todo.js"></script>

@@ -1,0 +1,201 @@
+html, body {
+	margin: 0;
+    -webkit-font-smoothing:antialiased;
+}
+
+/*.wrap{ 
+    height: 100%;
+    width: 100%;
+}*/
+
+.newsbar{
+    padding-top: 3px;
+    background-color: #22313F;
+    color: white;
+    padding-bottom: 3px;
+
+}
+
+.newsbar a{
+    padding-left: 10px;
+    color: white;
+    /*font-weight: bold;*/
+    text-decoration: none;
+    font-size: 15px;
+    /*font-family: 'Josefin Sans', sans-serif;*/
+    /*font-family: 'Lato', sans-serif;*/
+    font-family: 'Rosario';
+}
+
+#reload_img{
+    margin-left: 15px;
+    color: white;
+}
+
+a:visited{
+    color: #BDC3C7;
+}
+
+a:visited:hover{
+    color: #F89406;
+}
+
+a:link{
+    color: #36D7B7;
+
+}
+
+a:link:hover{
+    color:#F89406;
+    text-decoration: none;
+}
+
+a:hover{
+    color: white;
+    text-decoration: none ;
+}
+
+#hour_text{
+    margin-left: 10px;
+    margin-right: 10px;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 15px;
+
+}
+
+.marquee {
+    margin-left: 10px;
+    position:relative;
+    overflow:hidden;
+    width:500px;
+    height:auto;
+    border:solid black 1px;
+}
+.marquee span {white-space:nowrap;}
+
+.space
+{
+    color: black;
+}
+
+.separator
+{
+    color: white;
+}
+
+.modal-dialog{
+    color: black;
+}
+
+.modal-content{
+    height: 300px;
+}
+
+.modal-body{
+    height: 180px;
+}
+
+#modal_icon{
+     margin-left:30px;
+     text-decoration: none;
+}
+
+#modal_icon:hover{
+     margin-left:30px;
+     text-decoration: none;
+     color: white;
+}
+
+/*********TODOLIST**********/
+/******* STYLESHEET*********/
+.line {
+    margin: 1%;
+    display: block;
+    background-color: #22313F;
+    /*border-radius: 2%;*/
+    padding: 1%;
+    text-align: center;
+    
+}
+
+.column {
+    display: inline-table;
+    background-color: #36D7B7;
+    /*border-radius: 5%;*/
+    width: 32%;
+    margin-right: 2px;
+    height: 100%;
+    -webkit-box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.75);
+    -webkit-transform:rotate(-6deg);
+  -o-transform:rotate(-6deg);
+  -moz-transform:rotate(-6deg);
+}
+
+.column:nth-child(even){
+    -o-transform:rotate(4deg);
+  -webkit-transform:rotate(4deg);
+  -moz-transform:rotate(4deg);
+  position:relative;
+  top:5px;
+}
+
+ul {
+    padding: 2px;
+    list-style-type: none;
+    margin : 0px;
+    min-height: 5px;
+}
+
+li {
+    margin: 2%;
+    background-color: white;
+    display: block;
+    color: #22313F;
+    /*border-radius: 20%;*/
+}
+
+.todo-list li : hover {
+    background-color: red;
+}
+
+.todo-form {
+    /*margin: 2%;*/
+    background-color: #22313F;
+    color: white;
+}
+
+.feedback-input {
+    color:#3c3c3c;
+    /*font-family: Helvetica, Arial, sans-serif;*/
+    font-weight:500;
+    font-size: 18px;
+    border-radius: 0;
+    line-height: 22px;
+    background-color: #fbfbfb;
+    /*padding: 13px 13px 13px 54px;*/
+    margin-bottom: 10px;
+    width:100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 3px solid rgba(0,0,0,0);
+    box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);
+  
+}
+
+.feedback-input:focus{
+    background: #22313F;
+    box-shadow: 0;
+    border: 3px solid #22313F;
+    color: white;
+    outline: none;
+  /*padding: 13px 13px 13px 54px;*/
+}
+
+.input-group-addon{
+    background-color: #22313F;
+    color: #fbfbfb;
+}
