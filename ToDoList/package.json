@@ -1,0 +1,9 @@
+{
+    "name": "ToDoList",
+    "version": "0.0.1",
+    "description": "Liste collaborative",
+    "dependencies": {
+        "socket.io": "latest"
+    },
+    "author": "Lena"
+}
