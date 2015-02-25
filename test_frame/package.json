@@ -4,7 +4,8 @@
     "description": "Collaborative WorkSpace v.0.0.1",
     "dependencies": {
         "socket.io": "latest",
-		"express": "latest"
+		"express": "latest",
+		"node-static" : "latest"
     },
     "author": "Lena, Alex & Rajesh"
 }

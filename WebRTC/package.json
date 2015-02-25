@@ -1,0 +1,11 @@
+{
+    "name": "webRTC",
+    "version": "0.0.1",
+    "description": "appel IP",
+    "dependencies": {
+        "socket.io": "latest",
+		"express" : "latest",
+		"node-static" : "latest"
+    },
+    "author": "Alexandre, Radjesh, Lena"
+}
