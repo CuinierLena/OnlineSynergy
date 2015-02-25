@@ -1,0 +1,85 @@
+html, body {
+	margin: 0;
+}
+
+.wrap{ 
+    height: 100%;
+    width: 100%;
+}
+
+.newsbar{
+    padding-top: 3px;
+    background-color: #22313F;
+    color: white;
+    padding-bottom: 3px;
+}
+
+.newsbar a{
+    padding-left: 10px;
+    color: white;
+    /*font-weight: bold;*/
+    text-decoration: none;
+}
+
+#reload_img{
+    margin-left: 15px;
+    color: white;
+}
+
+a:link{
+    color: #36D7B7;
+}
+
+a:hover{
+    color: white;
+    text-decoration: none ;
+}
+
+#hour_text{
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+
+.marquee {
+    margin-left: 10px;
+    position:relative;
+    overflow:hidden;
+    width:500px;
+    height:auto;
+    border:solid black 1px;
+}
+.marquee span {white-space:nowrap;}
+
+.space
+{
+    color: black;
+}
+
+.separator
+{
+    color: white;
+}
+
+.modal-dialog{
+    color: black;
+}
+
+.modal-content{
+    height: 300px;
+}
+
+.modal-body{
+    height: 180px;
+}
+
+#modal_icon{
+     margin-left:30px;
+     text-decoration: none;
+}
+
+#modal_icon:hover{
+     margin-left:30px;
+     text-decoration: none;
+     color: white;
+}
