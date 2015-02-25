@@ -2,16 +2,16 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-        <script src="/socket.io/socket.io.js"></script>
-        <!-- PLUGINS -->
-            <!-- COLPICK -->
-            <script type="text/javascript" src="plugins/colpick/js/colpick.js"></script>
-            <link rel="stylesheet" href="plugins/colpick/css/colpick.css" type="text/css" />
-        <!-- CSS -->
-        <link href="styles/style.css" rel="stylesheet" type="text/css"/>
+        <link href="style.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
+        <div>
+            <canvas id="myCanvas"></canvas>
+            <button id="button_clear_canvas">Clear</button>
+        </div>
+    </body>
+</html>
+<!--
     	<script type="text/javascript">
 
             var socket = io();
@@ -140,14 +140,4 @@
                 // -------------------------- END COLORPICKER FUNCTIONS --------------------------//
             });
 
-    	</script>
-        <div>
-            
-            <div class="color-box"></div>
-            <div>
-                <canvas id="myCanvas" style="border:1px solid #000000;"></canvas>
-            </div>
-            <button id="button_clear_canvas">Clear</button>
-        </div>
-    </body>
-</html>
+    	</script>-->
