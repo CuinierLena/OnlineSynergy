@@ -18,10 +18,10 @@ var myToDo = "";
 var myIn = "";
 var myDone = "";
 
+var nbUserDrawing = 0;
+
 io.sockets.on('connection',function(socket) {
     var me=false; //variable globale au contexte io.sockets.on()
-
-    console.log('Nouveau utilisateur');
 
     //------------TODO-LIST initialisation--------------//
     io.sockets.emit('todo-list',{ message: myToDo});
@@ -51,35 +51,42 @@ io.sockets.on('connection',function(socket) {
     //--------------END TODO-LIST FUNCTIONS-----------------//
 
     //----------------DRAWING FUNCTIONS-----------------//
-	socket.on('disconnect', function(){
+	socket.on('newuser', function(){
+        socket.broadcast.emit("newuser", nbUserDrawing);
+        socket.emit("setID", nbUserDrawing);
+        nbUserDrawing ++;
+    });
+    socket.on('disconnect', function(){
         console.log('user disconnected');
     });
     socket.on('draw', function(x,y){
-        console.log("coord: " + "["+x+","+y+"]");
+        //console.log("coord: " + "["+x+","+y+"]");
         socket.broadcast.emit("draw", x, y);
     });
     socket.on('draw', function(x,y,_color){
-        console.log("coord: " + "["+x+","+y+"]");
+        //console.log("coord: " + "["+x+","+y+"]");
         socket.broadcast.emit("draw", x, y, _color);
     });
     socket.on('beginDraw', function(x,y){
         //console.log("begin: ["+x+","+y+"]");
         socket.broadcast.emit("beginDraw", x, y);
-        /*ctx.beginPath();
-        ctx.moveTo(x,y);
-        paint = true;*/
     });
     socket.on('endDraw', function(){
         //console.log("endDraw");
         socket.broadcast.emit("endDraw");
-        /*paint = false;
-        ctx.closePath();*/
     });
     socket.on('clearDraw', function(){
-        //console.log("endDraw");
         socket.broadcast.emit("clearDraw");
-        /*paint = false;
-        ctx.closePath();*/
+    });
+
+    socket.on('draw', function(x,y,_color, userID){
+        socket.broadcast.emit("draw", x, y, _color, userID);
+    });
+    socket.on('beginDraw', function(x,y, userID){
+        socket.broadcast.emit("beginDraw", x, y, userID);
+    });
+    socket.on('endDraw', function(userID){
+        socket.broadcast.emit("endDraw", userID);
     });
     //--------------END DRAWING FUNCTIONS-----------------//
 

@@ -13,13 +13,15 @@
         <link rel="stylesheet" href="../plugins/colpick/css/colpick.css" type="text/css" />
 
         <!-- STYLE -->
-        <!--<link href="../styles/style.css" rel="stylesheet" type="text/css"/>-->
+        <link href="../styles/style.css" rel="stylesheet" type="text/css"/>
     </head>
-    <body>
-        <div>
-            <canvas id="myCanvas" style="border:1px solid #000000;"></canvas>
-            <button id="button_clear_canvas">Clear</button>
+    <body style="margin: 0px">
+        <div id="layers">
             <div class="color-box"></div>
+            <button id="button_clear_canvas">Clear</button>
+            <canvas class="drawingCanvas" id="myCanvas"></canvas>
+            <canvas class="drawingCanvasServer"></canvas>
+            <!--<div class="color-box"></div>-->
         </div>
     </body>
 </html>

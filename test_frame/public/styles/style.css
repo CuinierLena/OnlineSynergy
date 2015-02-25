@@ -53,14 +53,46 @@ li {
     float: right;
 }
 
+.drawingCanvasServer{
+    display: block;
+    position: absolute;
+    background-color: transparent;
+    border:1px solid #000000;
+    z-index: -2;
+}
+
 #myCanvas{
     display: block;
-	width:100%;
+	/*width:100%;
     height: 100%;
     border: 0px;
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
-    bottom: 0;
+    bottom: 0;*/
+    border:1px solid #000000;
+    position: absolute;
+    background-color: transparent;
+    z-index: -1;
+    
+}
+
+#button_clear_canvas
+{
+    float:left;
+    width:50px;
+    height:30px;
+    margin:5px;
+    border: 1px solid black;
+}
+
+.color-box {
+    float:left;
+    width:30px;
+    height:30px;
+    margin:5px;
+    border: 1px solid black;
+    z-index: 5;
+    border-radius: 6px;
 }
