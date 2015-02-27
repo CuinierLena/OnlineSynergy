@@ -1,12 +1,17 @@
+/****** INDEX *****/
+/**** STYLESHEET *****/
+
+.framesettings{
+    border: 2px solid;
+    border-color:  #36D7B7
+}
+
 html, body {
 	margin: 0;
     -webkit-font-smoothing:antialiased;
-}
 
-/*.wrap{ 
-    height: 100%;
-    width: 100%;
-}*/
+
+}
 
 .newsbar{
     padding-top: 3px;
@@ -129,24 +134,25 @@ a:hover{
     -moz-box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.75);
     box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.75);
     -webkit-transform:rotate(-6deg);
-  -o-transform:rotate(-6deg);
-  -moz-transform:rotate(-6deg);
+    -o-transform:rotate(-6deg);
+    -moz-transform:rotate(-6deg);
+
 }
 
 .column:nth-child(even){
     -o-transform:rotate(4deg);
-  -webkit-transform:rotate(4deg);
-  -moz-transform:rotate(4deg);
-  position:relative;
-  top:5px;
+    -webkit-transform:rotate(4deg);
+    -moz-transform:rotate(4deg);
+    position:relative;
+    top:5px;
 }
 
 ul {
     padding: 2px;
     list-style-type: none;
-    margin : 0px;
+    margin : 2px;
     min-height: 5px;
-    background-color: #ABB7B7;
+    background-color: #6C7A89;
 }
 
 li {
@@ -156,6 +162,9 @@ li {
     color: #22313F;
     /*border-radius: 20%;*/
     cursor: move;
+    font-family: "Times New Roman", Times, serif;
+    transform: perspective(1px) scale(1.02);
+    font-size: medium;
 }
 
 .todo-list li : hover {
@@ -243,3 +252,4 @@ li {
     z-index: 5;
     border-radius: 6px;
 }
+
