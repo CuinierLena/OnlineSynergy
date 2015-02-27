@@ -209,17 +209,20 @@ li {
     display: block;
     position: absolute;
     background-color: transparent;
-    border:1px solid #000000;
+    /*border:1px solid #000000;*/
     z-index: -2;
+    /*cursor: url(../views/img/pencil.png), auto;*/
+    cursor: crosshair;
 }
 
 #myCanvas{
     display: block;
-    border:1px solid #000000;
+    /*border:1px solid #000000;*/
     position: absolute;
     background-color: transparent;
     z-index: -1;
-    
+    /*cursor: url(../views/img/pencil.png), auto;*/
+    cursor: crosshair;
 }
 
 #button_clear_canvas
