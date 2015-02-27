@@ -4,11 +4,21 @@ var ctx;
 var paint = false;
 
 var color = "#5fdaa5";
+//var color = "rgb(155, 102, 102)"; 
 
 var c2;
 var ctx2nd;
 
 var monId;
+
+function getRandomColor() {
+    var letters = '0123456789ABCDEF'.split('');
+    var color = '#';
+    for (var i = 0; i < 6; i++ ) {
+        color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+}
 
 (function($) {
 
@@ -18,7 +28,7 @@ var monId;
         //testS = socket;
         //alert("ready");
         //socket.broadcast.emit('newuser');
-
+        color = getRandomColor();
         // send to current request socket client
         socket.emit('newuser');
         //alert(socket);
@@ -53,6 +63,9 @@ var monId;
         $('#myCanvas').mousedown(function(e)
         {
             //console.log("[x, y]");
+            $( "canvas" ).each(function( ) {
+              console.log($( this ).width() );
+            });
             var mouseX = e.pageX - this.offsetLeft;
             var mouseY = e.pageY - this.offsetTop;
             ctx.beginPath();
