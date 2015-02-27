@@ -146,6 +146,7 @@ ul {
     list-style-type: none;
     margin : 0px;
     min-height: 5px;
+    background-color: #ABB7B7;
 }
 
 li {
@@ -154,6 +155,7 @@ li {
     display: block;
     color: #22313F;
     /*border-radius: 20%;*/
+    cursor: move;
 }
 
 .todo-list li : hover {
