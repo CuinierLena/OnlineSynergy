@@ -18,6 +18,8 @@ var myToDo = "";
 var myIn = "";
 var myDone = "";
 
+var nbUserDrawing = 0;
+
 io.sockets.on('connection',function(socket) {
     var me=false; //variable globale au contexte io.sockets.on()
 
