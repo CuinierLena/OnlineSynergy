@@ -100,7 +100,7 @@ var monId;
         // -------------------------- SOCKET FUNCTIONS --------------------------//
         socket.on('newuser', function(_userID){
             //alert("newuser: "+socket.id);
-            alert("newuser: "+_userID);
+            //alert("newuser: "+_userID);
             //var newCanvas = $('<canvas/>',{'class':'drawingCanvasServer'});
             var newCanvas = 
                 $('<canvas/>',{'class':'drawingCanvasServer'})
@@ -115,7 +115,7 @@ var monId;
 
         socket.on('setID', function(id)
         {
-            alert(id);
+            //alert(id);
             monId = id;
         });
         socket.on('draw', function(x,y){

@@ -81,6 +81,21 @@ io.sockets.on('connection',function(socket) {
         /*paint = false;
         ctx.closePath();*/
     });
+    socket.on('newuser', function(){
+        socket.broadcast.emit("newuser", nbUserDrawing);
+        socket.emit("setID", nbUserDrawing);
+        nbUserDrawing ++;
+    });
+
+    socket.on('draw', function(x,y,_color, userID){
+        socket.broadcast.emit("draw", x, y, _color, userID);
+    });
+    socket.on('beginDraw', function(x,y, userID){
+        socket.broadcast.emit("beginDraw", x, y, userID);
+    });
+    socket.on('endDraw', function(userID){
+        socket.broadcast.emit("endDraw", userID);
+    });
     //--------------END DRAWING FUNCTIONS-----------------//
     
     //-------------------Web RTC ----------------------//
