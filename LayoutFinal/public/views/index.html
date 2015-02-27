@@ -4,19 +4,20 @@
         <meta charset="utf-8" />
         <link href="../styles/style.css" rel="stylesheet" type="text/css" media="screen"/>
         <script src="/socket.io/socket.io.js"></script>
-        <title>Liste de Taches</title>
+        <title>Online Synergy - The Workspace you need !</title>
     </head>
 
 
-	<frameset cols="80%, 20%" class="framesettings"> 
-		<frameset id="left_frames" rows="27px,50%, 50%" class="framesettings">.
+	<frameset cols="80%, 20%"> 
+		<frameset id="left_frames" rows="27px,65%, 35%" class="framesettings">.
 			<frame src="views/newsbar.html" name="newsbar">
 			<frame src="views/draw.html"   name="draw">
 			<frame src="views/todo.html" name="todo">
 		</frameset> 
-		
-		<frame src="views/webrtc.html" name="webrtc">
-
+		<frameset id="right_frames" rows="70%,30%">
+			<frame src="views/webrtc.html" name="webrtc">
+			<frame src="views/about.html" name="about">
+		</frameset>
 	</frameset> 
 
 <script src="client.js"></script>

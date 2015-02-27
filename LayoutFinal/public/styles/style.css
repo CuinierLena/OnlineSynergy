@@ -253,3 +253,26 @@ li {
     border-radius: 6px;
 }
 
+/****  ABOUT ****/
+/**** Stylesheet ****/
+
+.mobject{
+    border: 2px solid #36D7B7;
+    border-radius: 5px;
+}
+
+ul.social {
+  list-style: none;
+  background-color: #22313F;
+}
+ul.social li {
+  display: inline-block;
+  background-color: #22313F;
+}
+ul.social li a {
+  width: 15px;
+  height: 15px;
+  text-align: center;
+  display: inline-block;
+  background-color: #22313F;
+}
