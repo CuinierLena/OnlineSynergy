@@ -1,10 +1,9 @@
-# WorkSpace
+# Online Synergy
 Espace de travail colaboratif contenant :
 -TODOList
--ApiSysteme de fichier
 -"Tableau" Dessin
 -RSS (lire, créer)
--flux video, audio des paricipants (https://appear.in)
+-flux video, audio des paricipants
 
 **** Développeurs ****
 
