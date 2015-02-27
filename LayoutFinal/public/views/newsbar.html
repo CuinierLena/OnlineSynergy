@@ -80,7 +80,16 @@
             });
         });
         // Refresh fluxRss every 10mins
-        setInterval("initrss()", 600 000);
+        setInterval("initrss()", 600000);
+
+        $('#modal-id').on('show.bs.modal', function () {
+            parent.document.getElementById('left_frames').setAttribute('rows', '350px, 50%, 50%', 0);
+          })
+
+        $('#modal-id').on('hide.bs.modal', function () {
+            parent.document.getElementById('left_frames').setAttribute('rows', '27px, 50%, 50%', 0);
+          })
+        
     </script>
 
     </body>
